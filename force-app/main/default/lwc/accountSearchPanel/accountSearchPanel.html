@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="取引先検索" icon-name="utility:search">
+        <lightning-input
+            name="enter-search"
+            label="取引先名"
+            type="search"
+            onchange={handleSearchTermChange} 
+            class="slds-m-bottom_small" 
+            placeholder="取引先名で検索" 
+            value={searchTerm}
+        ></lightning-input>
+    </lightning-card>
+</template>
