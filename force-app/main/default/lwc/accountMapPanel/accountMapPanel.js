@@ -11,12 +11,12 @@ export default class AccountMapPanel extends LightningElement {
     @wire(CurrentPageReference) pageRef;
     
     connectedCallback() {
-		// subscribe to bearListUpdate event
+		// subscribe to accountMapUpdate event
 		registerListener('accountMapUpdate', this.handleaccountMapUpdate, this);
     }
     
     disconnectedCallback() {
-		// unsubscribe from bearListUpdate event
+		// unsubscribe from accountMapUpdate event
 		unregisterAllListeners(this);
     }
     
